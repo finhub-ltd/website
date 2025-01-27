@@ -3,6 +3,7 @@ body {
     --global-padding: 150px;
 }
 
+
 header {
     padding: 10px;
     box-shadow: 0 0 3px lightgray;
@@ -189,4 +190,69 @@ footer {
 
 .icon {
     height: 16px;
+}
+
+
+@media screen and (max-width: 760px) {
+    body {
+        --global-padding: 50px;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .main-page-block-banner {
+        grid-template-columns: 80%;
+    }
+
+    .main-page-block-core-products .grid {
+        display: block;
+    }
+
+    .main-page-block-2 {
+        display: none;
+    }
+
+    header .menu {
+        display: block;
+    }
+
+    .header-logo {
+        padding-right: 5px;
+    }
+
+    nav ul li {
+        padding: 5px;
+    }
+
+    .banner {
+        text-align: center;
+        height: 90%;
+        padding: 5px;
+    }
+
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner h2 {
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        display: block;
+        margin: auto;
+    }
+
+    .main-page-block-banner {
+        padding: 5px;
+        display: block;
+    }
 }
